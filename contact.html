@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <title>Abbington Farm Park</title>
+</head>
+
+<body> 
+    <section id="main">
+        <!--https://www.youtube.com/watch?v=mh36Kts-wX8, setting up responsive Navbar-->
+        <!--Links to other pages-->
+        <nav class="navbar">
+            <div>
+              <a href="#">
+                <img class = "farm-logo" src="images/Logo_New.jpg" alt="'The Farm' logo with cartoon sheep">
+
+            <ul class="nav-list" id="navi-list">
+                <li class = "list-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class = "list-item">
+                    <a href="farm-shop.html">Farm Shop</a>
+                </li>
+                <li class = "list-item">
+                    <a href="things-to-do.html">Things to do</a>
+                </li>
+                <li class = "list-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+            <div class="menu" id="toggle-button">
+                <!--<div class="menu-line"></div>-->
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+                    <!--start of different content-->       
+                    <h2>Contact Us</h2>
+                    <p>You can use the form below to get in touch with us if you need more information about the things we produce, or our activities.</p>
+                    <p>You also send us an order for the Farm Shop, we'll get right back to you to arrange delivery.</p>
+                    <p>We look forward to seeing you at <span class="the-farm">The Farm</span> soon.</p>
+                    <container>
+                        <form name="enquiry" action="confirm.html">
+                            <label>Name</label>
+                            <input type="text" id="name" name="yourname" placeholder="Your name..">
+                            <label>Email</label>
+                            <input type="email" id="youremail" placeholder="Your email address">
+                            <label>Enquiry</label>
+                            <textarea id="enquiry" id="Enquiry" placeholder="Your enquiry..provide a phone number and we will call you back" style="height:50px"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                        <!--end of different content--> 
+                        <!--address and googlemap-->
+                        <div style="overflow-x: auto;">
+                            <div class="flex-container-iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5073.227508832307!2d-3.6992019796520443!3d55.499860187141515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888014cefb5327d%3A0xd6b5b6f301e6fb19!2sNether%20Abbington!5e0!3m2!1sen!2suk!4v1677779925050!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <table class="address">
+                            <tr>
+                                <th>Opening times</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Monday to Saturday: 8.00am to 5.00pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday: 9.00am to 4.30pm</td>
+                                    </tr>
+                                </table>
+                                <table class="address">
+                                    <tr>
+                                        <th>Address</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Nether Abbington Farm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Abington, Biggar ML12 6SD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tel: 01864 502501</td>
+                                    </tr>
+                                    <tr>
+                                        <td>email: info@abbingtonfarm.com</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <footer>
+                                <a href="index.html">Home</a>
+                                <p>All Content &copy; Abbington Farm 2023</p>
+                                <noscript>You do not have Javascript enabled, please enable to use this function.</noscript>
+                            </footer>
+                        </section>
+                    <script>
+                        const toggleButton = document.getElementById("toggle-button");
+                        const naviList = document.getElementById("navi-list");
+                        toggleButton.addEventListener('click', () => {
+                            naviList.classList.toggle('active'); /*overwrites display of navbar*/
+                        })
+                    </script>
+                    </body>
+                    </html>

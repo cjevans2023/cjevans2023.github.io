@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <title>The Farm Visitor Centre, Abington</title>
+</head>
+
+<body> 
+    <section id="main">
+        <!--https://www.youtube.com/watch?v=mh36Kts-wX8, setting up responsive Navbar-->
+        <!--Links to other pages-->
+        <nav class="navbar">
+            <div class="flexi-container"><!--fresh produce-->
+            <div>
+              <!--<a href="#">-->
+                <img class = "farm-logo" src="images/Logo_New.jpg" alt="'The Farm' logo with cartoon sheep">
+                
+                <ul class="nav-list" id="navi-list">
+                <li class = "list-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class = "list-item">
+                    <a href="farm-shop.html">Farm Shop</a>
+                </li>
+                <li class = "list-item">
+                    <a href="things-to-do.html">Things to do</a>
+                </li>
+                <li class = "list-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div></div>
+            <div class="menu" id="toggle-button">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+<!--start of page content-->
+<img class="sectionpic" src="images/footpath2.jpg" alt="Image of field with bales of hay and blue sky with white clouds">
+</div>
+        <h2>Things to do</h2>
+        <p>The Farm has many activities for people to do.</p>
+        <p>Enjoy the local walks.</p>
+        <p>Pick your own produce from The Garden to take home with you!</p>
+        <div class="flex-container">
+            <div>
+                <div><img src="images/Things_9.jpg" alt="image of hand picking apples"></div>
+                <div><img src="images/Veg_2.jpg" alt="image of crate of fresh carrots"></div>
+                <div><img src="images/Veg_3.jpg" alt="image of mound of potatoes"></div>
+            </div>
+        </div>
+        <p>Go on a Hayride (mid Jul to end Oct), Pick a Pumpkin (Oct), or find your way out of our 'Corn Maze' (mid-Jul to end Oct).</p>
+        <div class="flex-container">
+            <!---hayrides, pumpkin picking, and a corn maze-->
+            <div>
+                <div><img src="images/Hayride.jpg" alt="image of visitors enjoying a hayride, sitting on hay bales on a tractor trailer"></div>
+                <div><img src="images/Things_5.jpg" alt="image of a field of pumpkins"></div>
+                <div><img src="images/Corn_Maze.jpg" alt="image of a corn maize 'maze'"></div>
+            </div>
+        </div>
+
+        <p>Children can visit the animals in our Petting Zoo and see how they live in their natural habitat.</p>
+        <div class="flex-container">
+            <div>
+                <div><img src="images/Animals_10.jpg" alt="image of white goat kid"></div>
+                <div><img src="images/Animals_12.jpg" alt="image of two lambs"></div>
+                <div><img src="images/Animals_14.jpg" alt="image of a piglet"></div>
+            </div>
+        </div>
+        <p>Get active in the Play Park, on our tractor track! in The Barn, join in with our activities.</p>
+        <p>Have a go at 'milking' Daisy, or plant some seeds.</p>
+        <p>Look out for seasonal activities, in October you can carve a pumpkin.</p>
+            <div class="flex-container">
+                <div>
+                    <div><img src="images/Things_8.jpg" alt="image of boy on tractor"></div>
+                    <div><img src="images/Things_4.jpg" alt="image of a carved pumpkin"></div>
+                    <div><img src="images/Things_7.jpg" alt="image of plastic cow for children to learn about 'milking'"></div>
+                </div>
+            </div>    
+        </div>
+        <h2>Remember to bring your Wellington Boots!</h2>
+        <!--address and googlemap-->
+        <div style="overflow-x: auto;">
+        <div class="flex-container-iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5073.227508832307!2d-3.6992019796520443!3d55.499860187141515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888014cefb5327d%3A0xd6b5b6f301e6fb19!2sNether%20Abbington!5e0!3m2!1sen!2suk!4v1677779925050!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+        
+        <table class="address">
+            <tr>
+                <th>Opening times</th>
+            </tr>
+            <tr>
+                <td>Monday to Saturday: 8.00am to 5.00pm</td>
+            </tr>
+            <tr>
+                <td>Sunday: 9.00am to 4.30pm</td>
+            </tr>
+        </table>
+        <table class="address">
+            <tr>
+                <th>Address</th>
+            </tr>
+            <tr>
+                <td>Nether Abbington Farm</td>
+            </tr>
+            <tr>
+                <td>Abington, Biggar ML12 6SD</td>
+            </tr>
+            <tr>
+                <td>Tel: 01864 502501</td>
+            </tr>
+            <tr>
+                <td>email: info@abbingtonfarm.com</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <a href="index.html">Home</a>
+        <p>All Content &copy; Abbington Farm 2023</p>
+        <noscript>You do not have Javascript enabled, please enable to use this function.</noscript>
+    </footer>
+</section>
+<script>
+    const toggleButton = document.getElementById("toggle-button");
+    const naviList = document.getElementById("navi-list");
+
+    toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active'); /*overwrites display of navbar*/
+    })
+</script>
+</body>
+</html>
